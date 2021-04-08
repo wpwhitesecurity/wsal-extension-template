@@ -85,6 +85,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 			 */
 			add_action( 'wsal_before_sensor_load', array( $this, 'add_custom_sensors_and_events_dirs' ) );
 			add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
+			add_filter( 'wsal_custom_alerts_dirs', array( $this, 'add_custom_events_path' ) );
 		}
 
 		/**
@@ -248,7 +249,6 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 		 */
 		function add_custom_sensors_and_events_dirs( $sensor ) {
 			add_filter( 'wsal_custom_sensors_classes_dirs', array( $this, 'add_custom_sensors_path' ) );
-			add_filter( 'wsal_custom_alerts_dirs', array( $this, 'add_custom_events_path' ) );
 			return $sensor;
 		}
 
