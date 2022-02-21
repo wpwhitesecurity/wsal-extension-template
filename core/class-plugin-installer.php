@@ -1,4 +1,4 @@
-<?php
+<?php  // phpcs:disable WordPress.Files.FileName.NotHyphenatedLowercase
 
 namespace WPWhiteSecurity\ActivityLog\Extensions\Common;
 
@@ -11,6 +11,9 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\PluginInsta
 	 */
 	class PluginInstaller {
 
+		/**
+		 * Plugin installer contructor.
+		 */
 		public function __construct() {
 			$this->register();
 		}
@@ -96,7 +99,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\PluginInsta
 			}
 			// clear the cache so we're using fresh data.
 			wp_cache_flush();
-			$upgrader       = new \Plugin_Upgrader();
+			$upgrader       = new \Plugin_Upgrader;
 			$install_result = $upgrader->install( $plugin_zip );
 			if ( ! $install_result || is_wp_error( $install_result ) ) {
 				if ( is_wp_error( $install_result ) ) {
