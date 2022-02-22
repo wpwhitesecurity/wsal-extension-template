@@ -133,7 +133,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 
 			if ( $free_installed || $premium_installed ) {
 				// We have plugin installed.
-				// Is free version activate.
+				// Is free version active?
 				if ( is_plugin_active( 'wp-security-audit-log/wp-security-audit-log.php' ) ) {
 					$free_activated = true;
 				}
