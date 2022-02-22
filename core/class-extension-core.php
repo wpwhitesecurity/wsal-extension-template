@@ -143,7 +143,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 				}
 
 				if ( $free_activated || $premium_activated ) {
-					/* There is installed and activated plugin - bounce */
+					// There is installed and activated plugin - bounce.
 					return;
 				} else {
 
