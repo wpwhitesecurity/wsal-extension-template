@@ -71,7 +71,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 				$this->extension_plugin_name = '';
 			}
 
-			// If we dont have array, then continue with the as normal.
+			// If we don't have an array, then continue with the as normal.
 			else {
 				$this->extension_text_domain = $text_domain;
 				$this->custom_alert_path     = trailingslashit( dirname( $extension_main_file_path ) ) . 'wp-security-audit-log';
