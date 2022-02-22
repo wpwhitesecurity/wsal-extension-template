@@ -125,7 +125,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 			if ( $plugin_installer->is_plugin_installed( 'wp-security-audit-log/wp-security-audit-log.php' ) ) {
 				$free_installed = true;
 			}
-			/* Is there premium version installed */
+			// Is there premium version installed?
 			if ( $plugin_installer->is_plugin_installed( 'wp-security-audit-log-premium/wp-security-audit-log.php' ) ) {
 				$premium_installed = true;
 			}
