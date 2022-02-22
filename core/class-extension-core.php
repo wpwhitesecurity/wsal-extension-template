@@ -137,7 +137,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 				if ( is_plugin_active( 'wp-security-audit-log/wp-security-audit-log.php' ) ) {
 					$free_activated = true;
 				}
-				// Is premium version activated.
+				// Is premium version active?
 				if ( is_plugin_active( 'wp-security-audit-log-premium/wp-security-audit-log.php' ) ) {
 					$premium_activated = true;
 				}
