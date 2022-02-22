@@ -148,7 +148,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 				} else {
 
 					if ( ! self::$admin_notice_already_shown ) {
-						/* Notify the user that the activity log is not active */
+						// Notify the user that the WP Activity Log plugin is not active.
 						?>
 					<div class="notice notice-success is-dismissible wsal-installer-notice">
 						<?php
