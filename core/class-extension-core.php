@@ -173,7 +173,7 @@ if ( ! class_exists( '\WPWhiteSecurity\ActivityLog\Extensions\Common\Core' ) ) {
 				}
 			} elseif ( ! class_exists( 'WpSecurityAuditLog' ) ) {
 				if ( ! self::$admin_notice_already_shown ) {
-					/* Notify the user that the activity log is not installed */
+					// Notify the user that the WP Activity Log is not installed.
 					?>
 				<div class="notice notice-success is-dismissible wsal-installer-notice">
 					<?php
